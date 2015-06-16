@@ -4,6 +4,7 @@ body {
 	font-weight: 300;
 	font-size: 100%;
 }
+
 img, embed, object, video {
 	max-width: 100%;
 }
@@ -26,4 +27,19 @@ hr {
 
 .title-logo {
 	margin-top: 20px;
+}
+
+.title {
+		position: relative;
+  		min-height: 1px;
+  		padding-left: 15px;
+  		padding-right: 15px;
+  		text-align: right;
+  		text-transform: uppercase;
+	}
+
+@media only screen and (max-device-width: 480px) {
+	.divcontainer {
+		max-width: 100%;
+	}
 }

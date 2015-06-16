@@ -13,59 +13,62 @@
   </head>
   <body>
     <!-- The container required by bootstrap-->
-    <article class="container-fluid" max-width=100%>
-      <!-- Row setting up the logo and name-->
-      <header class= "row">
-        <figure class= "col-md-6">
-          <div><img class="img-responsive title-logo" src="images/udacity.png" alt="Responsive image"></div>
-        </figure>
-        <div class= "col-md-6 text-right text-uppercase">
-          <h1 class="title-super text-thin">Jane Doette</h1>
-          <h4>Front-end Ninja</h4>
+    <article class="container-fluid">
+      <!-- Div to set the maximun width to be used for small viewports -->
+      <div class="divcontainer">
+        <!-- Row setting up the logo and name-->
+        <header class= "row">
+          <div class= "col-md-6">
+            <div><img class="img-responsive title-logo" src="images/udacity.png" alt="Udacity Logo"></div>
+          </div>
+          <div class= "title">
+            <h1 class="title-super text-thin">Jane Doette</h1>
+            <h4>Front-end Ninja</h4>
+          </div>
+        </header>
+        <!-- Row setting up the horizontal rule-->
+        <div class="row">
+          <div class="col-md-12">
+            <hr>
+          </div>
         </div>
-      </header>
-      <!-- Row setting up the horizontal rule-->
-      <div class="row">
-        <div class="col-md-12">
-          <hr>
+        <!-- Row setting up the main HTML image on the page-->
+        <div class="row">
+          <div class= "col-md-12">
+            <img src="images/html-code3.jpg" class= "img-responsive" alt="HTML image">
+          </div>
+        </div>
+        <!-- Row setting up the featured work section of the page-->
+        <div class="row">
+          <div class= "col-md-12">
+            <h2 class="text-muted">Featured Work</h2>
+          </div>
+        </div>
+        <!-- Row setting up the three featured work images and text -->
+        <div class="row text-center">
+          <section class= "col-md-4">
+            <a href="project1" role="button" data-toggle="modal">
+              <img src="images/lego-magic.jpg" class= "img-responsive" data-toggle="modal" data-target="#project1" alt="Responsive image">
+            </a>
+            <h2>HTML and CSS</h2>
+            <p><a href="http://github.com">Link to project</a></p>
+          </section>
+          <section class= "col-md-4">
+            <a href="project2" role="button" data-toggle="modal">
+              <img src="images/lego-man.jpg" class= "img-responsive" data-toggle="modal" data-target="#project2" alt="Lego Man">
+            </a>
+            <h2>Frameworks</h2>
+            <p><a href="http://github.com">Link to project</a></p>
+          </section>
+          <section class="col-md-4">
+            <a href="project3" role="button" data-toggle="modal">
+              <img src="images/Toy-Story.png" class= "img-responsive" data-toggle="modal" data-target="#project3" alt="Toy Story">
+            </a>
+            <h2>Bootstrap</h2>
+            <p><a href="http://github.com">Link to project</a></p>
+          </section>
         </div>
       </div>
-      <!-- Row setting up the main HTML image on the page-->
-      <figure class="row">
-        <div class= "col-md-12">
-          <img src="images/html-code3.jpg" class= "img-responsive" alt="HTML image">
-        </div>
-      </figure>
-      <!-- Row setting up the featured work section of the page-->
-      <mark class="row">
-        <div class= "col-md-12">
-          <h2 class="text-muted">Featured Work</h2>
-        </div>
-      </mark>
-      <!-- Row setting up the three featured work images and text -->
-      <nav class="row text-center">
-        <figure class= "col-md-4">
-          <a href="project1" role="button" data-toggle="modal">
-            <img src="images/lego-magic.jpg" class= "img-responsive" data-toggle="modal" data-target="#project1" alt="Responsive image">
-          </a>
-          <h3>Appify</h3>
-          <p><a href="http://github.com">Link to project</a></p>
-        </figure>
-        <figure class= "col-md-4">
-          <a href="project2" role="button" data-toggle="modal">
-            <img src="images/lego-man.jpg" class= "img-responsive" data-toggle="modal" data-target="#project2" alt="Lego Man">
-          </a>
-          <h3>Appify</h3>
-          <p><a href="http://github.com">Link to project</a></p>
-        </figure>
-        <figure class="col-md-4">
-          <a href="project3" role="button" data-toggle="modal">
-            <img src="images/Toy-Story.png" class= "img-responsive" data-toggle="modal" data-target="#project3" alt="Toy Story">
-          </a>
-          <h3>Appify</h3>
-          <p><a href="http://github.com">Link to project</a></p>
-        </figure>
-      </nav>
     </article>
     <!-- Modals for added content corresponding to each featured work -->
   <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myproject1" aria-hidden="true">
