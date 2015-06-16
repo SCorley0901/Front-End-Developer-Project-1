@@ -4,58 +4,70 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Front End Developer Project</title>
-    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'> 
+    <title>Front End Developer Project 1</title>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">    
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class="container-fluid">
-      <div class= "row">      
-        <div class= "col-md-6">
+    <!-- The container required by bootstrap-->
+    <article class="container-fluid" max-width=100%>
+      <!-- Row setting up the logo and name-->
+      <header class= "row">
+        <figure class= "col-md-6">
           <div><img class="img-responsive title-logo" src="images/udacity.png" alt="Responsive image"></div>
-        </div>
+        </figure>
         <div class= "col-md-6 text-right text-uppercase">
           <h1 class="title-super text-thin">Jane Doette</h1>
           <h4>Front-end Ninja</h4>
-        </div>      
-      </div>
+        </div>
+      </header>
+      <!-- Row setting up the horizontal rule-->
       <div class="row">
         <div class="col-md-12">
           <hr>
         </div>
       </div>
-      <div class="row">
-      <div class= "col-md-12">
-        <img src="images/html-code3.jpg" class= "img-responsive" alt="HTML image">
-      </div>
-      </div>
-      <div class="row">
+      <!-- Row setting up the main HTML image on the page-->
+      <figure class="row">
+        <div class= "col-md-12">
+          <img src="images/html-code3.jpg" class= "img-responsive" alt="HTML image">
+        </div>
+      </figure>
+      <!-- Row setting up the featured work section of the page-->
+      <mark class="row">
         <div class= "col-md-12">
           <h2 class="text-muted">Featured Work</h2>
         </div>
-      </div>
-      <div class="row text-center">
-        <div class= "col-md-4">
-          <img src="images/lego-magic.jpg" class= "img-responsive" data-toggle="modal" data-target="#project1" alt="Responsive image">
+      </mark>
+      <!-- Row setting up the three featured work images and text -->
+      <nav class="row text-center">
+        <figure class= "col-md-4">
+          <a href="project1" role="button" data-toggle="modal">
+            <img src="images/lego-magic.jpg" class= "img-responsive" data-toggle="modal" data-target="#project1" alt="Responsive image">
+          </a>
           <h3>Appify</h3>
           <p><a href="http://github.com">Link to project</a></p>
-        </div>
-        <div class= "col-md-4">
-          <img src="images/lego-man.jpg" class= "img-responsive" data-toggle="modal" data-target="#project2" alt="Lego Man">
+        </figure>
+        <figure class= "col-md-4">
+          <a href="project2" role="button" data-toggle="modal">
+            <img src="images/lego-man.jpg" class= "img-responsive" data-toggle="modal" data-target="#project2" alt="Lego Man">
+          </a>
           <h3>Appify</h3>
           <p><a href="http://github.com">Link to project</a></p>
-        </div>    
-        <div class="col-md-4">
-          <img src="images/Toy-Story.png" class= "img-responsive" data-toggle="modal" data-target="#project3" alt="Toy Story">
+        </figure>
+        <figure class="col-md-4">
+          <a href="project3" role="button" data-toggle="modal">
+            <img src="images/Toy-Story.png" class= "img-responsive" data-toggle="modal" data-target="#project3" alt="Toy Story">
+          </a>
           <h3>Appify</h3>
           <p><a href="http://github.com">Link to project</a></p>
-        </div>
-      </div>
-    </div>
-    <!-- Modal -->
+        </figure>
+      </nav>
+    </article>
+    <!-- Modals for added content corresponding to each featured work -->
   <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myproject1" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -103,6 +115,6 @@
         </div>
       </div>
     </div>
-  </div>  
+  </div>
   </body>
 </html>
